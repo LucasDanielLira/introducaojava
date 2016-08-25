@@ -19,13 +19,24 @@ public class Menu {
         System.out.println(" 2) lista dos equipamentos  ");
         
         Scanner s= new Scanner(System.in);
-        try{
-            int op =s.nextInt();
+        int op=0;
+        do{
+            try{
+            op =Integer.parseInt(s.nextLine());
             System.out.println(" 0 usuario digitou "+ op);
-        
-        }catch(Exception e){
+            break;
+            }catch(Exception e){
              System.out.println(" tem namorado "+e.getMessage());
+            }
+        }while(op != 1 || op!=2);
+        switch (op){
+            case 1:
+               EquipamentoVisao.exibirFormulario();
+                break;
+            case 2:
+                
+                
+                break;
         }
-        
     }
 }
