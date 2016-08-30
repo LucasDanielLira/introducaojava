@@ -12,7 +12,7 @@ import java.util.Scanner;
  * @author 3817113
  */
 public class Menu {
-    public static void exibirMenu(String[] args) {
+    public static void exibirMenu() {
         System.out.println(" ola mundo esse é o menu ");
         System.out.println("----------- menu ------------ ");
         System.out.println(" 1) cadastro de equipamento ");
@@ -34,9 +34,11 @@ public class Menu {
                EquipamentoVisao.exibirFormulario();
                 break;
             case 2:
-                
+                EquipamentoVisao.exibirListagemDeEquipamentos();
                 
                 break;
         }
     }
+
+    
 }
